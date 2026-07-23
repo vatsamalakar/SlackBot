@@ -34,13 +34,6 @@ app.command("/super_bot-ping", async ({ ack, respond }) => {
   await respond({ text: `Pong!\nLatency: ${latency}ms` });
 });
 
-app.command("/super_bot-help", async ({ ack, respond }) => {
-  await ack();
-  await respond({
-    text: `Available Commands:\n/super_bot-ping - Check bot latency\n/super_bot-catfact - Get a cat fact\n/super_bot-joke - Get a random joke\n/super_bot-quote - Get a motivational quote\n/super_bot-dadjjoke - Get a dad joke\n/super_bot-8ball - Ask the magic 8-ball\n/super_bot-coinflip - Flip a coin\n/super_bot-rps - Play rock paper scissors`
-  });
-});
-
 app.command("/super_bot-catfact", async ({ ack, respond }) => {
   await ack();
 
